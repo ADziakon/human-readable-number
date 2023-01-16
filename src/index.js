@@ -20,18 +20,17 @@ len = String(number).length;
     }
     // числа от 20 до 99
     if(len == 2 && String(number)[0] >= 2){
-        //str4 = String(number)[1] + String(number)[2];
         for(j=0;j<arr3[1].length; j++){
             if(String(arr3[1][j])[0] == String(number)[0])
                 str = arr3[0][j];
         }
-
         if (String(number)[1] == 0 ){
             return str;
         }else{
             return str = str + " " + arr1[String(number)[1]];
         }
     }
+    // числа от 100 до 999
     if(len == 3){
         str2 = arr1[String(number)[0]] + " hundred";     
         for(j=0;j<arr3[1].length; j++){
